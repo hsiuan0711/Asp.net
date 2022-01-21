@@ -25,7 +25,7 @@ namespace WebTest_Framework
             int i = 0;
             foreach (var item in data.entries)
             {
-                if (item.title.Length > 35)
+                if (item.title.Length > 30)
                 {
                     item.title = item.title.Substring(0, 35);
                     item.title += "...<詳情請點>";
