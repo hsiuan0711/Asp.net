@@ -71,7 +71,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.aspx" />
-    <Content Include="Style-WebTest.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

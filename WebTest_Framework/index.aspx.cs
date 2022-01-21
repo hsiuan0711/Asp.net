@@ -27,7 +27,7 @@ namespace WebTest_Framework
             {
                 if (item.title.Length > 30)
                 {
-                    item.title = item.title.Substring(0, 35);
+                    item.title = item.title.Substring(0, 30);
                     item.title += "...<詳情請點>";
                     message.InnerHtml += "<tr>" + "<td>" + item.category + "</td>" +
                     "<td><a href=\"detail.aspx?i=" + i + "\">" + item.title +
