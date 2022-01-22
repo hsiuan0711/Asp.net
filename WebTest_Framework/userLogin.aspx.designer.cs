@@ -42,13 +42,13 @@ namespace WebTest_Framework
         protected global::System.Web.UI.WebControls.TextBox txtBox_password;
 
         /// <summary>
-        /// txtBox_passwordConfirm 控制項。
+        /// label_message 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtBox_passwordConfirm;
+        protected global::System.Web.UI.WebControls.Label label_message;
 
         /// <summary>
         /// btn_login 控制項。

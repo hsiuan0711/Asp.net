@@ -10,15 +10,20 @@
 <body>
     <form id="form1" runat="server">
 
-       <span>測試 TestBox功能</span> <br />
-       帳號： <asp:TextBox ID="txtBox_account" runat="server" required ="required" aria-required="true" ></asp:TextBox><br />  
-       密碼： <asp:TextBox ID="txtBox_password" runat="server" required ="required" aria-required="true"
-               oninvalid="setCustomValidity('請設定您的密碼')" oninput="this.setCustomValidity('')" 
-               TextMode="Password" ClientIDMode="Static"></asp:TextBox><br />
-       再次輸入密碼： <asp:TextBox ID="txtBox_passwordConfirm" runat="server" required="required" type="password" 
-                         oninput="check(this)" ClientIDMode="Static"  TextMode="Password"></asp:TextBox><br />
+      <h1> <span>使用者登入畫面
+        </span> <br /></h1>
+       帳號： <asp:TextBox ID="txtBox_account" runat="server"  ></asp:TextBox><br />  <%--required ="required" aria-required="true" HTML5 內建 防呆--%>
+       密碼： <asp:TextBox ID="txtBox_password" runat="server"  TextMode="Password"> </asp:TextBox><br /> 
+      <%--   required ="required" aria-required="true"    HTML5 內建 防呆
+          oninvalid="setCustomValidity('請設定您的密碼')" oninput="this.setCustomValidity('')" 
+                ClientIDMode="Static"--%>
+       <%--       再次輸入密碼： <asp:TextBox ID="txtBox_passwordConfirm" runat="server" required="required" type="password" 
+                         oninput="check(this)" ClientIDMode="Static"  TextMode="Password"></asp:TextBox>--%>
+        <br />
+        <asp:Label ID="label_message" runat="server" Text=""></asp:Label>
+        <br />
 
-      <script language='javascript' type='text/javascript'>
+   <%--   <script language='javascript' type='text/javascript'>
         function check(input) {
             if (input.value != document.getElementById('txtBox_password').value) {
                 input.setCustomValidity('Password Must be Matching.');
@@ -27,8 +32,8 @@
                 input.setCustomValidity('');
             }
         }
-      </script>
-       登入： <asp:Button ID="btn_login" runat="server" Text="確認" />
+      </script>--%>
+       登入： <asp:Button ID="btn_login" runat="server" Text="確認" OnClick="btn_login_Click" />
 
 
 
