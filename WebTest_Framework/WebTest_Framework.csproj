@@ -72,6 +72,8 @@
   <ItemGroup>
     <Content Include="detail.aspx" />
     <Content Include="index.aspx" />
+    <Content Include="testPostBack.aspx" />
+    <Content Include="TestQueryString.aspx" />
     <Content Include="userLogin.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -91,6 +93,20 @@
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="testPostBack.aspx.cs">
+      <DependentUpon>testPostBack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testPostBack.aspx.designer.cs">
+      <DependentUpon>testPostBack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestQueryString.aspx.cs">
+      <DependentUpon>TestQueryString.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestQueryString.aspx.designer.cs">
+      <DependentUpon>TestQueryString.aspx</DependentUpon>
+    </Compile>
     <Compile Include="userLogin.aspx.cs">
       <DependentUpon>userLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

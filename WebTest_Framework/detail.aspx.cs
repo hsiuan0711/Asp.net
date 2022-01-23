@@ -11,7 +11,14 @@ namespace WebTest_Framework
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Response.Write("<br />detail.aspx.cs的內容");
+
+
+            Label_Show.Text = "肥羊" + Session["name"].ToString();
+
+            // Response.Write("<br />detail.aspx.cs的內容");
+
+            //Label_Show.Text ="肥羊"+Request.QueryString["name"];
+
         }
     }
 }

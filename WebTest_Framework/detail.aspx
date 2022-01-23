@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <span><br />detail.aspx的內容</span>
+          <h1>歡迎<asp:Label ID="Label_Show" BackColor="Red" runat="server" ></asp:Label><br /></h1>
         </div>
     </form>
 </body>

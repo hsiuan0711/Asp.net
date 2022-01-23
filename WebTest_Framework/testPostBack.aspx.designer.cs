@@ -11,7 +11,7 @@ namespace WebTest_Framework
 {
 
 
-    public partial class detail
+    public partial class testPostBack
     {
 
         /// <summary>
@@ -24,12 +24,21 @@ namespace WebTest_Framework
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Label_Show 控制項。
+        /// CheckBoxList_Cars 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label_Show;
+        protected global::System.Web.UI.WebControls.CheckBoxList CheckBoxList_Cars;
+
+        /// <summary>
+        /// Label_Cars 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label_Cars;
     }
 }
